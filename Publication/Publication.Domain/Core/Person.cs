@@ -3,9 +3,9 @@ namespace Publication.Domain.Core
 {
     public class Person
     {
-        protected string FirstName { get; set; }
-        protected string LastName { get; set; }
-        protected string PhoneNumber { get; set; }
-        protected string Email { get; set; }   
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }   
     }
 }

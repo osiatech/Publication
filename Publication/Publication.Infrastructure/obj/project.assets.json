@@ -2198,6 +2198,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Publication.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.32",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32"
+        },
+        "compile": {
+          "bin/placeholder/Publication.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Publication.Domain.dll": {}
+        }
       }
     }
   },
@@ -7168,13 +7182,19 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Publication.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Publication.Domain/Publication.Domain.csproj",
+      "msbuildProject": "../Publication.Domain/Publication.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
       "Microsoft.EntityFrameworkCore >= 3.1.32",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.32",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.32"
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.32",
+      "Publication.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7203,7 +7223,11 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\DELL\\Desktop\\Publication\\Publication\\Publication.Domain\\Publication.Domain.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\Publication\\Publication\\Publication.Domain\\Publication.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
